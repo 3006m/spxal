@@ -1,0 +1,58 @@
+img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0; /* Start with the image hidden */
+    border-radius: 10px;
+    transition: 1s ease-in-out;
+    transform: translateY(20px); /* Start slightly below its final position */
+    animation: fadeInUp 1s ease-in-out forwards; /* Apply the animation */
+}
+
+img:hover {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start below */
+    }
+    100% {
+        opacity: 0.6; /* Match the default opacity */
+        transform: translateY(0); /* Move to the final position */
+    }
+}
+
+.corpo {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        opacity: 0.8; /* Slightly increase opacity for better visibility on small screens */
+        animation: fadeInUp 1s ease-in-out forwards; /* Ensure animation works on smaller screens */
+    }
+
+    .corpo {
+        flex-direction: column; /* Stack elements vertically for better layout on small screens */
+    }
+
+    footer {
+        font-size: 14px; /* Adjust footer text size for smaller screens */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}

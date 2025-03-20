@@ -1,0 +1,104 @@
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.side-photo {
+    width: 30%; /* Adjust the size of the photos */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    opacity: 0; /* Start with the image hidden */
+    transform: translateY(20px); /* Start slightly below its final position */
+    animation: fadeInUp 1s ease-in-out forwards; /* Apply the animation */
+}
+
+.side-photo:nth-child(1) {
+    animation-delay: 0.2s; /* Delay for the first image */
+}
+
+.side-photo:nth-child(3) {
+    animation-delay: 0.4s; /* Delay for the second image */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-container {
+    width: 40%; /* Adjust the width of the text container */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.side-photo {
+    width: 30%; /* Adjust the size of the photos */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    opacity: 0; /* Start with the image hidden */
+    transform: translateY(20px); /* Start slightly below its final position */
+    animation: fadeInUp 1s ease-in-out forwards; /* Apply the animation */
+}
+
+.side-photo:nth-child(1) {
+    animation-delay: 0.2s; /* Delay for the first image */
+}
+
+.side-photo:nth-child(3) {
+    animation-delay: 0.4s; /* Delay for the second image */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-container {
+    width: 40%; /* Adjust the width of the text container */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Media query for smartphones */
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column; /* Stack the photos and text vertically */
+        gap: 10px; /* Reduce the gap between elements */
+    }
+
+    .side-photo {
+        width: 80%; /* Make the photos take up more space on smaller screens */
+    }
+
+    .text-container {
+        width: 90%; /* Make the text container take up more space */
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+}

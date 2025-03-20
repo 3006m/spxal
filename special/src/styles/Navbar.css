@@ -1,0 +1,45 @@
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li {
+    padding: 2px;
+    align-items: center;
+}
+
+
+h2 {
+    padding: 2px;
+}
+
+/* Media Query for Smartphone Size */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        justify-content: center;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px; /* Increased padding for touch targets */
+    }
+}
