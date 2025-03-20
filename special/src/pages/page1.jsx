@@ -65,6 +65,10 @@ function Page1() {
           <strong>😇: </strong>
           <button onClick={handleClick}>① Foto</button>
           {message && <p>{message}</p>}
+          <br />
+          <br />
+          <br />
+          20/03/2025
         </li>
       </ol>
 

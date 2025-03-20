@@ -45,6 +45,10 @@ function Page2() {
             somos... Uma meta.
             Eu te amo daqui até o fim, e não existe mais um universo ou um pensamento onde Murilo apareça longe de Ingrid.
             Você é a mulher da minha vida. EU TE AMO, AMOR!❤
+            <br />
+            <br />
+            <br />
+          20/03/2025
           </p>
         </div>
         <img src={Foto7} className="side-photo" />
