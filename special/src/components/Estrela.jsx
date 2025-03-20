@@ -15,7 +15,7 @@ function Estrela() {
             onClick={() => handleClick(i)}
             style={{ cursor: 'pointer', color: i <= avaliacao ? 'yellow' : 'black', fontSize: '2vw' }}
           >
-          ★
+          
           </span>
         );
       }
