@@ -9,6 +9,7 @@ function Home() {
   return (
     <>
         <h1>Home Page😊</h1>
+        <p>Novidade no site!</p>
       <Header />
       
         <p>Eu te amo❤</p>
