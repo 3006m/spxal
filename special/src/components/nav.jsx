@@ -24,9 +24,8 @@ function NavBar() {
                 </li>
 
                 <li>
-                    <Link to="/page3">
-                    <h3>🎉</h3>
-                    </Link>
+                  <h3>🎉</h3>
+                
                 </li>
         
             </ul>
