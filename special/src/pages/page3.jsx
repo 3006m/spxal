@@ -6,7 +6,7 @@ import Foto7 from "../assets/Image7.jpg";
 
 import "../styles/Page2.css";
 
-function Page2() {
+function Page3() {
   useEffect(() => {
     document.title = `Eu te amo❤`;
   }, []);
@@ -59,4 +59,4 @@ function Page2() {
   );
 }
 
-export default Page2;
+export default Page3;
