@@ -28,6 +28,11 @@ function NavBar() {
                   <h3>🎉</h3>
                   </Link>
                 </li>
+                <li>
+                    <Link to="/page4">
+                    <h3>⏳</h3>
+                    </Link>
+                </li>
         
             </ul>
         </nav>
