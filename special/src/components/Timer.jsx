@@ -31,7 +31,7 @@ function Timer() {
     <div className="timer-container">
       <h2>Contagem Regressiva para o próximo aniversário da minha gata.</h2>
       {timeLeft.days !== undefined ? (
-        <div className="timer">
+        <div>
           <p>Faltam <strong>{timeLeft.days}</strong> Dias</p>
           <p><strong>{timeLeft.hours}</strong> Horas</p>
           <p><strong>{timeLeft.minutes}</strong> Minutos</p>

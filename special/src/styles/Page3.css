@@ -7,6 +7,12 @@
     animation: fadeIn 1s ease-in-out; /* Apply fade-in animation to the container */
 }
 
+.timer-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .text-container {
     width: 50%;
     text-align: center;
@@ -74,12 +80,7 @@ strong{
 }
 
 
-.timer-container{
-    background-color: rgba(128, 0, 0, 0.182);
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
+
 
 @media (max-width: 768px) {
     .page-container {

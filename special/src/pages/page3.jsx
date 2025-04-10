@@ -27,7 +27,7 @@ function Page3() {
 
   if (!isAuthorized) {
     return (
-      <div className="password-container">
+      <div>
         <h1>Digite a senha para acessar a página</h1>
         <p>
             A <strong>Senha</strong> será liberada pelo <strong>Seu namorado</strong> no dia 19/04/2025, às 00h00.

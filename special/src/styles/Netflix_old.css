@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+.netflix-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1d1d1d;
+  color: rgb(255, 0, 0);
+}
+
+.slideshow {
+  overflow: hidden;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.slideshow-container {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.card {
+  flex: 0 0 300px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border: solid 5px #540101;
+
+}
+
+.card p {
+  padding: 10px;
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Slideshow Animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2000px);
+  }
+  50% {
+    transform: translateX(-1600px);
+  }
+  75% {
+    transform: translateX(-1300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Smartphone Styles */
+@media (max-width: 768px) {
+  .netflix-header {
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+
+  .slideshow {
+    margin: 10px 0;
+  }
+
+  .card {
+    flex: 0 0 200px;
+    margin: 0 5px;
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .card p {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-1200px);
+    }
+    50% {
+      transform: translateX(-900px);
+    }
+    75% {
+      transform: translateX(-600px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

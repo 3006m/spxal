@@ -37,25 +37,35 @@ function TimerBirth() {
     return () => clearInterval(timer); // Cleanup on component unmount
   }, []);
 
+  const isLessThanAMonth = (time) => time.days <= 30;
+
   return (
     <div className="timers">
-        <h2><strong>Aniversários <br/>😊</strong></h2>
-        <div className="timerdiv">
-      <div className="timer">
-        <h2>Tempo restante até o próximo aniversário meu😊</h2>
-        <p>{timeUntilJune30.days} <strong>Dias</strong></p>
-        <p>{timeUntilJune30.hours} <strong>Horas</strong></p>
-        <p>{timeUntilJune30.minutes} <strong>Minutos</strong></p>
-        <p>{timeUntilJune30.seconds} <strong>Segundos</strong></p>
-      </div>
-      <div className="timer">
-        <h2>Tempo restante até o próximo aniversário seu😊</h2>
-        <p>{timeUntilApril19.days} <strong>Dias</strong></p>
-        <p>{timeUntilApril19.hours} <strong>Horas</strong></p>
-        <p>{timeUntilApril19.minutes} <strong>Minutos</strong></p>
-        <p>{timeUntilApril19.seconds} <strong>Segundos</strong></p>
+      <h2><strong>Aniversários <br />😊</strong></h2>
+      <div className="timerdiv">
+        <div className="timer">
+          <h2>Tempo restante até o próximo aniversário meu 😊</h2>
+          <p>{timeUntilJune30.days} <strong>Dias</strong></p>
+          <p>{timeUntilJune30.hours} <strong>Horas</strong></p>
+          <p>{timeUntilJune30.minutes} <strong>Minutos</strong></p>
+          <p>{timeUntilJune30.seconds} <strong>Segundos</strong></p>
+        </div>
+        <div className="timer">
+          <h2>Tempo restante até o próximo aniversário seu 😊</h2>
+          <p>{timeUntilApril19.days} <strong>Dias</strong></p>
+          <p>{timeUntilApril19.hours} <strong>Horas</strong></p>
+          <p>{timeUntilApril19.minutes} <strong>Minutos</strong></p>
+          <p>{timeUntilApril19.seconds} <strong>Segundos</strong></p>
         </div>
       </div>
+      
+      {isLessThanAMonth(timeUntilJune30) && (
+            <p><strong>Tá chegando o meu! 🎉</strong></p>
+          )}
+      
+      {isLessThanAMonth(timeUntilApril19) && (
+            <p><strong>Tá chegando o seu! 🎉</strong></p>
+          )}
     </div>
   );
 }

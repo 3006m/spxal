@@ -10,7 +10,7 @@
 .timers{
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 200px;
     border: solid rgba(255, 255, 255, 0.321);
     border-radius: 5px;
 }
@@ -79,5 +79,46 @@
   }
   50% {
     transform: scale(1) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timers {
+    padding: 40px; /* Reduz o padding para dispositivos menores */
+    flex-direction: column; /* Alinha os timers verticalmente */
+  }
+
+  .timerdiv {
+    flex-direction: column; /* Alinha os timers verticalmente */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timer {
+    width: 100%; /* Ajusta a largura para ocupar todo o espaço */
+    margin-bottom: 20px; /* Adiciona espaço entre os timers */
+  }
+
+  .progress-bar {
+    width: 100%; /* Ajusta a barra de progresso para ocupar toda a largura */
+  }
+
+  .heart {
+    width: 40px; /* Reduz o tamanho do coração */
+    height: 40px;
+  }
+
+  .heart::before,
+  .heart::after {
+    width: 40px;
+    height: 40px;
+  }
+
+  .heart::before {
+    top: -20px;
+  }
+
+  .heart::after {
+    left: 20px;
   }
 }

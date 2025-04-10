@@ -18,6 +18,7 @@ function Page4() {
         <br />
         <TimerBirth />
       </div>
+      <p>09/04/2025</p>
       <Footer />
     </>
   );
