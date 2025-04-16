@@ -23,7 +23,7 @@ const GameLov = () => {
     };
 
     const handleClick = () => {
-        if (clickCount < 10) {
+        if (clickCount < 20) {
             setClickCount(clickCount + 1);
         }
     };
