@@ -98,6 +98,8 @@ function Page3() {
         </div>
         <img src={Foto12} className="side-photo" />
       </div>
+<br />
+
 
       <Footer />
     </>

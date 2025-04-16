@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
+
 function NavBar() {
   return (
     <div>
@@ -21,7 +22,6 @@ function NavBar() {
               <h3>💘</h3>
             </Link>
           </li>
-
           <li>
             <Link to="/page3">
               <h3>🎉</h3>
@@ -35,6 +35,11 @@ function NavBar() {
           <li>
             <Link to="/netflix">
               <h3>🎬</h3>
+            </Link>
+          </li>
+          <li>
+            <Link to="/game">
+              <h3>🎮</h3>
             </Link>
           </li>
         </ul>
