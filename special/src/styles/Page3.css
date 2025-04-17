@@ -106,3 +106,77 @@ strong{
     }
 }
 
+
+audio{
+
+    width: 100%;
+    height: 50px;
+
+     
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: #242424;
+    color: #fff;
+
+}
+
+audio::-webkit-media-controls-current-time-display{
+    color: rgb(255, 0, 0);
+}
+
+
+audio::-webkit-media-controls-play-button{
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-time-remaining-display{
+    color: rgb(255, 207, 94);
+}
+
+audio::-webkit-media-controls-volume-slider{
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+audio::-webkit-media-controls-mute-button{
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 10px; /* Reduce the gap between elements */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .text-container {
+        width: 90%; /* Make the text container take up more space */
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+
+    .side-photo, .top-photo {
+        width: 80%; /* Make the images take up more space */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .timer-container {
+        width: 90%; /* Adjust the timer container width */
+        font-size: 14px; /* Adjust font size for better readability */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .Audio {
+        width: 100%; /* Make the audio player take full width on small screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .Audio button {
+        width: 100%; /* Make the play button full width */
+        padding: 15px; /* Increase padding for better touch targets */
+    }
+}

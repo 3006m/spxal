@@ -5,6 +5,7 @@ import Foto13 from "../assets/Image13.jpg";
 import Foto12 from "../assets/Image12.jpg";
 import Foto15 from "../assets/Image15.jpg";
 import Timer from "../components/Timer";
+import Audio from "../assets/audio.m4a"
 import "../styles/Page3.css";
 
 function Page3() {
@@ -61,6 +62,9 @@ function Page3() {
           <h1>❤19/04/2025❤</h1>
           <Timer />
 
+    <audio src={Audio} controls className="Audio"/>
+      <br />
+      <br />
           <img src={Foto13} className="top-photo" />
           <p>
             <strong>O seu dia chegou, meu amor!</strong> 19/04/2025, e esse é o
