@@ -17,3 +17,9 @@ h6{
     font-size: 12px;
 }
 
+.alternate-theme footer{
+    background-color: #ffe6e6; 
+    color: #660000; 
+    transition: background-color 1s ease, color 0.3s ease;
+}
+

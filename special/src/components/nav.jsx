@@ -42,6 +42,11 @@ function NavBar() {
               <h3>🎮</h3>
             </Link>
           </li>
+          <li>
+            <Link to="/euteamo">
+              <h3>💖</h3>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

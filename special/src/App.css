@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+
+body.alternate-theme {
+  background-color: #ffe6e6; /* light pink background for alternate theme */
+  color: #660000; /* dark red text color */
+  transition: background-color 1s ease, color 0.3s ease;
+}
+
