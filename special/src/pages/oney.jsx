@@ -38,9 +38,9 @@ function Oney() {
     return (
       <div className="password-screen"> {/* Adicione um estilo para essa div se quiser */}
         <div className="password-form">
-          <h1>Página Secreta</h1>
+          <h1>😁😁❤</h1>
           <p>
-            Para abrir nossa surpresa, digite a senha especial que só nós conhecemos.
+            A senha será liberada no dia <strong>12/08/2025</strong> pelo <strong>Seu namorado</strong>.
           </p>
           <form onSubmit={handlePasswordSubmit}>
             <input
