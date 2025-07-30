@@ -38,6 +38,7 @@ function Oney() {
     return (
       <div className="password-screen"> {/* Adicione um estilo para essa div se quiser */}
         <div className="password-form">
+          <Header />
           <h1>😁😁❤</h1>
           <p>
             A senha será liberada no dia <strong>12/08/2025</strong> pelo <strong>Seu namorado</strong>.
