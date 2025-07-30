@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "../components/Header";
+import Header2 from "../components/Header2";
 import Footer from "../components/Footer"
 import AnniversaryWelcome from "../components/TelaBoasVindas";
 import Timeline from "../components/Timeline";
@@ -38,7 +38,7 @@ function Oney() {
     return (
       <div className="password-screen"> {/* Adicione um estilo para essa div se quiser */}
         <div className="password-form">
-          <Header />
+          <Header2 />
           <h1>😁😁❤</h1>
           <p>
             A senha será liberada no dia <strong>12/08/2025</strong> pelo <strong>Seu namorado</strong>.
