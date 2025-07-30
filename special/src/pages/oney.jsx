@@ -67,7 +67,7 @@ function Oney() {
   return (
     <>
       {/* O <h1> foi removido daqui para não aparecer antes do conteúdo principal */}
-      <Header />
+      <Header2 />
       <AnniversaryWelcome />
       <div id="nossas-memorias">
         <Timeline />
