@@ -1,0 +1,57 @@
+.letter-container {
+  background-color: #fdf5e6; /* Cor de "pergaminho" ou papel antigo */
+  padding: 60px 20px;
+  font-family: 'Merriweather', serif; /* Nossa nova fonte para leitura */
+  color: #4a3f35; /* Um marrom escuro, mais suave que preto */
+}
+
+.letter-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #5c3c3c;
+  margin-bottom: 40px;
+}
+
+.letter-body {
+  max-width: 700px;
+  margin: 0 auto; /* Centraliza o corpo da carta */
+  line-height: 1.8; /* Aumenta o espaçamento entre as linhas para facilitar a leitura */
+  font-size: 1.1rem;
+}
+
+.letter-body p {
+  margin-bottom: 1.5em; /* Espaço entre os parágrafos */
+}
+
+/* Estilo para as palavras e frases em destaque */
+.letter-body strong {
+  font-weight: 700; /* Deixa o negrito mais forte */
+  color: #c76f6f; /* Uma cor romântica para o destaque */
+}
+
+/* Estilo para a assinatura */
+.letter-signature {
+  font-family: 'Dancing Script', cursive; /* A fonte de "escrita à mão" */
+  font-size: 2rem;
+  text-align: right;
+  margin-top: 40px;
+  color: #5c3c3c;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .letter-container {
+    padding: 40px 15px;
+  }
+  .letter-title {
+    font-size: 2rem;
+  }
+  .letter-body {
+    font-size: 1rem;
+  }
+  .letter-signature {
+    font-size: 1.8rem;
+    text-align: center; /* Centraliza a assinatura no celular */
+  }
+}

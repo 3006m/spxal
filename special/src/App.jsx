@@ -11,6 +11,7 @@ import './App.css'
 import { Analytics } from "@vercel/analytics/react"
 import PageNew from './pages/pagenew';
 import BotaoTema from './components/botaotema';
+import Oney from './pages/oney';
 
 function App() {
   const [isAlternateTheme, setIsAlternateTheme] = useState(false);
@@ -38,6 +39,7 @@ function App() {
           <Route path="/netflix" element={<Netflix />} />
           <Route path="/game" element={<GameLov />} />
           <Route path="/euteamo" element={<PageNew />} />
+          <Route path="/oney" element={<Oney />} />
         </Routes>
       </BrowserRouter>
       <Analytics />

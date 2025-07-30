@@ -20,11 +20,7 @@ function Home() {
         <br />
         <br />
        <BlocoTexto />
-        <footer>
-                <h4>Murilo Correia</h4>
-                <h6>mucorreia008@gmail.com - @mu_correia</h6>
-                <p>Copyright 2025 - Todos os direitos reservados</p>
-            </footer>
+        <Footer />
     </>
   )
 }

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&display=swap');
+
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45); /* Sombra para melhorar a leitura do texto */
+}
+
+.hero-content {
+  position: relative; /* Garante que o conteúdo fique sobre a sombra */
+  z-index: 1;
+  padding: 20px;
+  /* Adiciona uma animação suave de entrada */
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif; /* Fonte elegante para o título */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Lato', sans-serif; /* Fonte limpa e moderna para o subtítulo */
+  font-weight: 300;
+}
+
+.hero-button {
+  padding: 12px 24px;
+  background-color: #ff6b6b; /* Cor romântica */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #ff4757; /* Cor mais vibrante ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom sutil */
+}
+
+/* Ajustes para telas menores (celulares) */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
